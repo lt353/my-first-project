@@ -1,0 +1,146 @@
+/*
+   Name: Lindsay Trenton
+   Assignment: Professional Profile 
+   Description: 
+    - Custom CSS styling for my resume profile.
+
+   Sources: 
+    - ChatGPT for help with new style choices I hadn't done before. 
+        - For Example, link hovering, box-shadows, scaling down when the screen is small
+          as well as putting in scroll bars for the tables when the screen gets small.
+    - For the color scheme I used: https://web.archive.org/web/20130414215234/http://www.lavishbootstrap.com/?image_url=http://design-seeds.com/palettes/12/SpringTones505.jpg
+
+   Date: 08 February 2025
+*/
+
+/* General Styling */
+body {
+    font-family: 'Times New Roman', sans-serif; /* Uses Times New Roman or a sans-serif fallback */
+    background: #28363D; /* Sets the full-page background color to deep slate */
+    color: #E1DDC1; /* Light text color for contrast */
+    margin: 0; /* Removes default margins to prevent unwanted white space */
+    padding: 0; /* Removes default padding to ensure full-width background */
+}
+
+/* Main Container - Content Area */
+.container {
+    width: 70%; /* Limits content width to 70% of the viewport for readability */
+    margin: 40px auto; /* Centers the container horizontally with top margin */
+    background: #2F575D; /* Dark blue-green */
+    padding: 30px; 
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.2); /* Adds a slight shadow effect for depth */
+}
+
+/* Header (my name) */
+header {
+    text-align: center; 
+    padding: 20px; 
+    background: #28363D; /* Deep slate */
+    color: #E1DDC1; 
+    border-radius: 10px; /* Rounds the corners */
+    font-size: 26px; /* Makes the text larger */
+    font-weight: bold; /* Makes the text bold */
+}
+
+/* Profile Section (picture/email/location) */
+.profile {
+    text-align: center; 
+    padding: 20px; 
+}
+
+.profile-pic {
+    width: 160px; 
+    height: 200px; 
+    border-radius: 10px; /* Rounds the corners */
+    border: 4px solid #28363D; /* Adds a dark border around the picture */
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.2); /* Slight shadow effect */
+}
+
+/* Contact Information */
+.profile p {
+    font-size: 18px; 
+    margin: 10px 0; 
+}
+
+.profile a {
+    text-decoration: none; /* Removes underlines from email link - ChatGPT taught me this*/
+    color: #E1DDC1; 
+    font-weight: bold;
+}
+
+/* Changes link color to muted green when you hover over. ChatGPT assisted me in learning this */
+.profile a:hover {
+    color: #65886F; 
+}
+
+/* Sections */
+section {
+    margin-top: 25px; /* spacing between sections */
+    padding: 20px; 
+    background: #28363D; /* Deep slate */
+    border-radius: 8px; /* Rounds the corners */
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for depth */
+}
+
+/* Section Headings */
+h3 {
+    color: #E1DDC1; 
+    border-bottom: 3px solid #65886F; /* muted green underline */
+    padding-bottom: 8px; /* Adds space below the heading */
+    text-transform: uppercase; /* Converts text to uppercase rather than having to go back and edit html*/
+}
+
+/* Lists */
+ul {
+    padding-left: 20px; /* Indents the list items */
+    color: #E1DDC1; /* Light text */
+}
+
+ul li {
+    margin: 8px 0; /* Spacing between list items */
+}
+
+/* Table Container - Keeps tables responsive */
+.table-container {
+    width: 100%; 
+    /* Learned from ChatGPT: Horizontal scrolling for when screen gets to small to fit everything */
+    overflow-x: auto; 
+}
+
+/* Table Styling */
+table {
+    width: 100%; 
+    border-collapse: collapse; /* Chat-GPT taught me this: Merges table borders to remove gaps */
+    margin-top: 15px; /* Space above tables */
+    background: #2F575D; /* Dark blue-green */
+}
+
+th, td {
+    border: 1px solid #65886F; /* Muted green */
+    padding: 12px; /* Adds padding inside cells */
+    text-align: left; 
+    font-size: 16px; 
+    color: #E1DDC1; 
+}
+
+th {
+    background: #28363D; /* Deep slate */
+    color: #E1DDC1; 
+    
+}
+
+/* I needed the most help with this from ChatGPT. Although I learned about it with 
+ * Udemy, I needed assistance. 
+ * This is a responsive table meaning it adjusts for smaller screens 
+ */
+@media screen and (max-width: 600px) {
+    th, td {
+        padding: 8px; /* Reduces padding for smaller screens */
+        font-size: 14px; /* Decreases font size for better fit */
+    }
+
+    table {
+        font-size: 14px; /* Ensures the whole table scales down */
+    }
+}

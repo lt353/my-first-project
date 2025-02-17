@@ -1,0 +1,135 @@
+<!--
+   Name: Lindsay Trenton
+   Assignment: Professional Profile 
+   Description: 
+   - HTML for the actual content in the webpage. 
+
+   Sources: 
+    - ChatGPT for help with making the page responsive to screen size and some assistance
+      with how to set it to open a link in a new tab and how to use 'mailto'
+   Date: 08 February 2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  <!-- Helps special characters display correctly. -->
+    <!-- 
+        Makes sure the page is responsive (adjusts for different screen sizes) 
+        "width=device-width" sets the page width to the device width, and "initial-scale=1.0" ensures no zooming.
+        I had help from ChatGPT to figure this out. 
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lindsay Trenton - Professional Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Wrapper for the entire content. The "container" class used in CSS to control width/margins/general layout. -->
+    <div class="container">
+        <header>
+            <h2>Lindsay M. Trenton</h2>
+        </header>
+        <!-- groups the profile picture and contact info together. -->
+        <div class="profile">
+            <img src="lindsay.jpg" alt="Lindsay Trenton" class="profile-pic">
+             <!-- "mailto:" lets users click the email and open their default mail app. 
+                  I had help from ChatGPT to figure this out. 
+             -->
+            <p><strong>Email:</strong> <a href="mailto:lt353@hawaii.edu">lt353@hawaii.edu</a></p>
+            <!--Creates a clickable text that links to my linkedIn profile
+                target="_blank" makes the link open in a new tab - something that I learned through ChatGPT-->
+            <p><strong><a href="https://www.linkedin.com/in/lindsay-trenton-370102351/" target="_blank">LinkedIn</a></strong></p>
+            <p><strong>Location:</strong> Kauai, Hawaii</p>
+        </div>
+        <section>
+            <h3>Career Objectives</h3>
+            <p>
+                I am currently pursuing a <strong>BAS in Applied Business and Information Technology</strong> at UH Maui College. 
+                I have a strong interest in <strong>databases, UX design, and project management</strong>. 
+                With years of experience in the hospitality industry managing multiple locations, I excel at organization and problem-solving.
+            </p>
+        </section>
+
+        <section>
+            <h3>Top Skills</h3>
+            <ul>
+                <li><strong>Excel:</strong> Intermediate/Advanced knowledge, some experience using in data analysis and accounting.</li>
+                <li><strong>SQL:</strong> Beginner/Intermediate, currently learning NoSQL.</li>
+                <li><strong>Python:</strong> Beginner/Intermediate, strong problem-solving skills.</li>
+                <li><strong>Java:</strong> Understanding of object-oriented programming.</li>
+                <li><strong>HTML, CSS, JavaScript:</strong> Web development basics.</li>
+                <li><strong>Node.js:</strong> Just started learning.</li>
+                <li><strong>Project Management:</strong> Strong organizational and leadership skills.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Employment History</h3>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Employer</th>
+                        <th>Location</th>
+                        <th>Job Responsibilities</th>
+                    </tr>
+                    <tr>
+                        <td>BPHostels</td>
+                        <td>Budapest, Hungary</td>
+                        <td>General Manager overseeing all six hostels and bars, responsible for operations, IT systems, hiring, training, financials, marketing, and establishing partnerships.</td>
+                    </tr>
+                    <tr>
+                        <td>Penthouse Hostel</td>
+                        <td>Budapest, Hungary</td>
+                        <td>Opened and managed a new hostel under the BPHostels group.</td>
+                    </tr>
+                    <tr>
+                        <td>Vitae Hostel</td>
+                        <td>Budapest, Hungary</td>
+                        <td>Assistant Manager, handling daily operations and guest experience.</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h3>Educational History</h3>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Year</th>
+                        <th>Institution</th>
+                        <th>Program</th>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>UH Leeward</td>
+                        <td>Associate of Science</td>
+                    </tr>
+                    <tr>
+                        <td>2026 (Expected)</td>
+                        <td>UH Maui College</td>
+                        <td>BAS in Applied Business and Information Technology</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h3>Certifications</h3>
+            <ul>
+                <li><strong>Google IT Support</strong> – Coursera</li>
+                <li><strong>Using Python to Interact with the Operating System</strong> – Coursera</li>
+                <li><strong>Google UX design</strong> - Coursera</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Hobbies & Interests</h3>
+            <p>Reading, crocheting, open water swimming, traveling.</p>
+        </section>
+
+    </div>
+
+</body>
+</html>
+
